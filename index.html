@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Сайт про Майнкрафт</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e0f7fa;
+      color: #333;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    header {
+      background-color: #388e3c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #2e7d32;
+    }
+
+    .dark-theme {
+      background-color: #212121;
+      color: #f5f5f5;
+    }
+
+    .dark-theme header {
+      background-color: #1b5e20;
+    }
+
+    .dark-theme button {
+      background-color: #66bb6a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #c8e6c9;
+      margin-top: 30px;
+    }
+
+    .dark-theme footer {
+      background-color: #424242;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Майнкрафт</h1>
+    <p>Виживай, будуй, досліджуй!</p>
+  </header>
+
+  <main>
+    <h2>Що таке Minecraft?</h2>
+    <p>Minecraft — це популярна гра в жанрі «пісочниця», де гравці можуть будувати і досліджувати безмежний світ з блоків.</p>
+    
+    <img src="https://www.minecraft.net/content/dam/minecraftnet/franchise/component-library/redeemheroa/Redeem-Hero_Desktop-Right_500x500.png" alt="Minecraft">
+
+    <button onclick="toggleTheme()">Змінити тему</button>
+  </main>
+
+  <footer>
+    <p>© 2025 Minecraft Fan Сайт. Усі права захищені.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-theme');
+    }
+  </script>
+</body>
+</html>
